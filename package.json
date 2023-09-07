@@ -1,0 +1,24 @@
+{
+  "name": "brandlogs_prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./input.css -o ./assets/css/output.css --watch",
+    "build": "npx tailwindcss -i ./input.css -o ./assets/css/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaingiMuema/Brandlogs_prototype.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaingiMuema/Brandlogs_prototype/issues"
+  },
+  "homepage": "https://github.com/MaingiMuema/Brandlogs_prototype#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
