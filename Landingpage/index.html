@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/output.css" />
+    <title>Brandlogs</title>
+  </head>
+<body>
+    <header>
+        <nav
+          class="
+            flex flex-wrap
+            items-center
+            justify-between
+            w-full
+            lg:py-2
+            md:py-0
+            px-12
+            text-lg text-gray-700
+            bg-green
+          "
+        >
+          <div>
+            <a href="/Landingpage/index.html">
+              <img src="../assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" class="w-12 transition-transform transform-gpu hover:scale-105 hover:opacity-90" alt="logo"/>
+            </a>
+          </div>
+          
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-button"
+            class="h-6 w-6 cursor-pointer md:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          
+          <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+            <ul
+              class="
+                pt-4
+                text-base text-gray-700
+                md:flex
+                md:justify-between 
+                md:pt-0"
+            >
+              <li class="lg:px-24 md:px-12">
+                <a class="md:p-4 py-2 block text-white hover:text-orange" href="/Landingpage/index.html#Benefits"
+                  >Benefits</a
+                >
+              </li>
+              <li class="lg:px-24 md:px-12">
+                <a class="md:p-4 py-2 block text-white hover:text-orange" href="/Landingpage/index.html#About"
+                  >Who we are</a
+                >
+              </li>
+              <li class="lg:px-24 md:px-12">
+                <a class="md:p-4 py-2 block text-white hover:text-orange" href="/Landingpage/index.html#FAQs"
+                  >FAQS</a
+                >
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <div class="relative overflow-hidden bg-cover bg-no-repeat py-3" style="
+        background-position: 50%;
+        background-image: url('../assets/images/hero-img.png');
+        height: 470px;
+      ">
+      <div
+        class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.3)] bg-fixed">
+        <div class="flex h-full items-center justify-center">
+          <div class="px-6 text-center text-white md:px-12">
+            <h2 class="text-3xl font-bold tracking-tight md:text-3xl xl:text-4xl">Welcome</h2>
+            <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-orange">
+              TO THE AGE OF  <br /><span>HUNGER LIBERATION</span>
+            </h1>
+            <h5 class="-mt-8"><b>Rewards you $250 Gift Voucher Bonus for Kickstarting Feeding a Food Insecure Child.</b></h5>
+            <p class="mt-12 text-cta-caption">The Future of Retail Shopping Experience</p>
+            <button type="button" class="rounded mt-2 mb-4 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase text-neutral-50 transition duration-150 ease-in-out bg-red hover:bg-opacity-60">
+              Get started
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+  
+    <script>
+      const button = document.querySelector('#menu-button');
+      const menu = document.querySelector('#menu');
+
+
+      button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+
+    </script>
+</body>
+</html>

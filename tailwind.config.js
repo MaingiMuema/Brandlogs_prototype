@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -8,6 +8,10 @@ module.exports = {
         green: "#1C9346",
         orange: "#F7A01C",
         red: "#DB2127",
+        cta_hover: "#9D2C24"
+      },
+      fontSize: {
+        'cta-caption': '0.8em',
       },
     },
     plugins: [],
