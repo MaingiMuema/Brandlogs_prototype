@@ -1,0 +1,6 @@
+
+/* CSS for the hover animation (optional) */
+.icon-container:hover svg {
+    transform: scale(1.1); /* Scale the icon up by 10% on hover */
+    transition: transform 0.2s ease; /* Smooth transition */
+}
