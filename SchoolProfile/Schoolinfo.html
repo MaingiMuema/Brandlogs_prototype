@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../assets/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#D9D9D9] flex flex-col justify-center items-center">
+    <div class="w-full max-w-2xl px-8 py-8">
+      <div class="flex justify-center m-8 font-extrabold text-3xl">
+        <h2>School Information</h2>
+      </div>
+      <form class="bg-white p-8 w-full rounded">
+        <div class="mb-5">
+          <label for="school-name" class="block mb-1">School Name</label>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="mb-5">
+          <label for="school-name" class="block mb-1"
+            >School Registration Number / Nemis code</label
+          >
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <!-- <div>
+          <label for="school-name" class="block">School Address</label>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div> -->
+
+        <div class="flex flex-row w-full gap-8 mb-5">
+          <div class="flex flex-col">
+            <label for="school-name" class="block mb-1">Number of pupils</label>
+            <input
+              type="text"
+              class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+
+          <div class="flex flex-col">
+            <label for="school-name" class="block mb-1"
+              >Number of operational years</label
+            >
+            <input
+              type="text"
+              class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h3 class="my-4">School Address</h3>
+          <div class="flex flex-row w-full justify-around gap-3">
+            <div class="flex flex-col mb-5">
+              <label for="school-name" class="block mb-1">County</label>
+              <input
+                type="text"
+                class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="flex flex-col mb-5">
+              <label for="school-name" class="block mb-1">Sub-County</label>
+              <input
+                type="text"
+                class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="flex flex-col mb-5">
+              <label for="school-name" class="block mb-1">Ward</label>
+              <input
+                type="text"
+                class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="my-4">Contact Person (Must be a School Director)</h3>
+          <div class="mb-5">
+            <label for="school-name" class="block mb-1">Name</label>
+            <input
+              type="text"
+              class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="email" class="block mb-1">Email</label>
+            <input
+              id="email"
+              type="email"
+              class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="phone" class="block mb-1">Telephone Number</label>
+            <input
+              id="phone"
+              type="tel"
+              class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h3 class="my-4">School Address</h3>
+          <div class="flex flex-row w-full justify-around gap-3">
+            <div class="flex flex-col mb-5">
+              <label for="school-name" class="block mb-1">1st Term</label>
+              <input
+                type="text"
+                class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="flex flex-col mb-5">
+              <label for="school-name" class="block mb-1">2nd Term</label>
+              <input
+                type="text"
+                class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="flex flex-col mb-5">
+              <label for="school-name" class="block mb-1">3rd Term</label>
+              <input
+                type="text"
+                class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <label class="mb-1" for="reason"
+            >State briefly why you are applying to join this program</label
+          >
+          <textarea
+            name="reason"
+            id="reason"
+            cols="30"
+            rows="5"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          ></textarea>
+        </div>
+
+        <h3 class="my-3">Do you currently offer school meals?</h3>
+        <div class="flex items-center">
+          <div class="flex items-center mr-4">
+            <label for="inline-radio" class="me-2">Yes</label>
+            <input
+              id="inline-radio"
+              type="radio"
+              value=""
+              name="School-meals-Q"
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            />
+          </div>
+          <div class="flex items-center mr-4">
+            <label for="inline-radio2" class="me-2">No</label>
+            <input
+              id="inline-radio2"
+              type="radio"
+              value=""
+              name="School-meals-Q"
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            />
+          </div>
+        </div>
+
+        <h3 class="my-3">If yes, do you offer meals to</h3>
+        <div class="flex items-center mb-4">
+          <div class="flex items-center mr-4">
+            <label for="inline-radio" class="me-2">All kids</label>
+            <input
+              id="inline-radio3"
+              type="radio"
+              value=""
+              name="School-meals-A"
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            />
+          </div>
+          <div class="flex items-center mr-4">
+            <label for="inline-radio2" class="me-2">Partially</label>
+            <input
+              id="inline-radio4"
+              type="radio"
+              value=""
+              name="School-meals-A"
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            />
+          </div>
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer pp1?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="pp1"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="pp1"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer pp2?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="pp2"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="pp2"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer Grade 1?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="grade1"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="grade1"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer Grade 2?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="grade2"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="grade2"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer Grade 3?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="grade3"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="grade3"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer Grade 4?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="grade4"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="grade4"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer Grade 5?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="grade5"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="grade5"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer Grade 6?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="grade6"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="grade6"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer Grade 7?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="grade7"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="grade7"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer Grade 8?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="grade8"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="grade8"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+
+        <div class="pp1 mb-4">
+          <h3>Do you offer Grade 9?</h3>
+          <div class="flex items-center">
+            <div class="flex items-center mr-4">
+              <label for="inline-radio" class="me-2">Yes</label>
+              <input
+                id="inline-radio3"
+                type="radio"
+                value=""
+                name="grade9"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            <div class="flex items-center mr-4">
+              <label for="inline-radio2" class="me-2">No</label>
+              <input
+                id="inline-radio4"
+                type="radio"
+                value=""
+                name="grade9"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+          </div>
+          <h3 for="school-name" class="block my-3">If yes, how many?</h3>
+          <input
+            type="text"
+            class="w-full appearance-none border rounded p-2 bg-[#D9D9D9] leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="flex justify-center">
+          <button
+            type="submit"
+            class="bg-green text-white px-8 py-2 mt-5 rounded"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
