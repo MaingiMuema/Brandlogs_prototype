@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="fixed top-0 z-30 bg-white w-full border-[1px] border-black">
+      <div
+        class="flex items-center justify-between space-x-12 bg-white w-full py-2 px-6 md:px-24 md:py-6"
+      >
+        <div class="logo">
+          <img src="../assets/img/logo.png" alt="" class="w-12 h-12" />
+        </div>
+        <div
+          class="flex bg-white space-x-2 items-center border-green border-[1px] flex-1 rounded-md"
+        >
+          <img src="../assets/img/search.png" class="w-5 h-5 ml-4" alt="" />
+          <input
+            type="text"
+            class="w-full p-2 rounded-md"
+            name="search"
+            id="search"
+            placeholder="Search by account name..."
+          />
+        </div>
+        <button class="bg-red text-white py-2 px-4">Accept Invitation</button>
+      </div>
+    </header>
+    <div class="container flex relative">
+      <!-- Sidebar Navigation -->
+      <nav
+        class="fixed top-24 w-[300px] p-6 md:px-24 border-r mr-2 border-black h-screen"
+      >
+        <ul class="flex flex-col text-2xl font-bold space-y-5 pt-4">
+          <li><a href="../Home/home.html" class="text-green">Home</a></li>
+          <li><a href="../Brands/brand.html">Brands</a></li>
+          <li><a href="#">Wallet</a></li>
+          <li><a href="#">Notifications</a></li>
+        </ul>
+      </nav>
+      <!-- Main Section With User PRofile and Log Stories -->
+
+      <main
+        class="container pt-28 border-l-[1px] border-black flex-1 overflow-scroll flex flex-col items-center space-y-10 pl-[300px]"
+      >
+        <!-- User Profile -->
+        <div class="container border-b border-black pb-6">
+          <div class="flex mb-3 items-center justify-between px-5">
+            <a href="#">
+              <div class="flex space-x-2 items-center">
+                <img src="../assets/img/tony.jpg" class="w-16 h-16" alt="" />
+                <h3 class="font-bold">Username</h3>
+              </div>
+            </a>
+            <a href="#">
+              <button
+                class="border px-10 text-green font-bold rounded-md py-1 border-green hover:bg-green hover:text-white transition-all"
+              >
+                Connect
+              </button>
+            </a>
+          </div>
+          <div class="tabs">
+            <ul class="flex justify-center space-x-24 px-12">
+              <li class="">
+                <strong class="font-bold">Logged By:</strong> 10K
+              </li>
+              <li class=""><strong class="font-bold">Connects:</strong> 10K</li>
+              <li>
+                <a href="#" class="flex items-center space-x-2">
+                  <img src="../assets/img/share.png" class="w-5 h-5" alt="" />
+                  <strong class="font-bold">Share Profile</strong>
+                </a>
+              </li>
+            </ul>
+            <ul
+              class="flex font-bold mt-5 justify-center text-xl space-x-24 px-12"
+            >
+              <li class="active">
+                <a href="../Bio/bio.html">Bio</a>
+              </li>
+              <li>
+                <a href="../LogStories/logstories.html">Log Stories</a>
+              </li>
+              <li
+                class="relative after:block after:bg-green after:absolute after:-bottom-2 after:w-1/2 after:h-[2px] after:translate-x-1/2"
+              >
+                <a href="../Connects/connects.html">Connects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Connect Card Container-->
+        <div
+          class="container w-full border-b border-black flex justify-center p-10"
+        >
+          <div
+            class="rounded-xl px-6 py-10 w-3/5 flex items-center space-x-10 bg-[#3984b254]"
+          >
+            <div class="pic">
+              <img src="../assets/img/user.png" class="w-16 h-16" alt="" />
+            </div>
+            <div class="cont">
+              <h2 class="font-bold">Username</h2>
+              <p>
+                <strong class="font-bold">Connection Value:</strong> My School
+                Mate
+              </p>
+              <ul class="flex space-x-10">
+                <li><strong class="font-bold">Logged by:</strong> 200</li>
+                <li><strong class="font-bold">Connects:</strong> 200</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Connect Card Container-->
+        <div
+          class="container w-full border-b border-black flex justify-center p-10"
+        >
+          <div
+            class="rounded-xl px-6 py-10 w-3/5 flex items-center space-x-10 bg-[#3984b254]"
+          >
+            <div class="pic">
+              <img src="../assets/img/user.png" class="w-16 h-16" alt="" />
+            </div>
+            <div class="cont">
+              <h2 class="font-bold">Username</h2>
+              <p>
+                <strong class="font-bold">Connection Value:</strong> My School
+                Mate
+              </p>
+              <ul class="flex space-x-10">
+                <li><strong class="font-bold">Logged by:</strong> 200</li>
+                <li><strong class="font-bold">Connects:</strong> 200</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Connect Card Container-->
+        <div
+          class="container w-full border-b border-black flex justify-center p-10"
+        >
+          <div
+            class="rounded-xl px-6 py-10 w-3/5 flex items-center space-x-10 bg-[#3984b254]"
+          >
+            <div class="pic">
+              <img src="../assets/img/user.png" class="w-16 h-16" alt="" />
+            </div>
+            <div class="cont">
+              <h2 class="font-bold">Username</h2>
+              <p>
+                <strong class="font-bold">Connection Value:</strong> My School
+                Mate
+              </p>
+              <ul class="flex space-x-10">
+                <li><strong class="font-bold">Logged by:</strong> 200</li>
+                <li><strong class="font-bold">Connects:</strong> 200</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Connect Card Container-->
+        <div
+          class="container w-full border-b border-black flex justify-center p-10"
+        >
+          <div
+            class="rounded-xl px-6 py-10 w-3/5 flex items-center space-x-10 bg-[#3984b254]"
+          >
+            <div class="pic">
+              <img src="../assets/img/user.png" class="w-16 h-16" alt="" />
+            </div>
+            <div class="cont">
+              <h2 class="font-bold">Username</h2>
+              <p>
+                <strong class="font-bold">Connection Value:</strong> My School
+                Mate
+              </p>
+              <ul class="flex space-x-10">
+                <li><strong class="font-bold">Logged by:</strong> 200</li>
+                <li><strong class="font-bold">Connects:</strong> 200</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
