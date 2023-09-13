@@ -1,0 +1,348 @@
+
+/* CSS for the hover animation (optional) */
+.icon-container:hover svg {
+    transform: scale(1.1); /* Scale the icon up by 10% on hover */
+    transition: transform 0.2s ease; /* Smooth transition */
+}
+.nav-link:hover {
+  color: orange; /* Change text color on hover */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: orange; /* Underline color on hover */
+  transform: scaleX(0); /* Initially hidden */
+  transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Smooth underline animation */
+  transform-origin: 0% 50%;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); /* Show underline on hover */
+}
+
+.navbar-toggler-icon{
+  background: white;
+}
+
+#navbar-toggler {
+background-color: #fff;
+}
+
+
+.cta {
+  padding: 15px 30px 15px 30px;
+  background-color: #DB2127;
+  outline: none;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.cta:hover {
+  padding: 15px 30px 15px 30px;
+  background-color: #db2127d2;
+  outline: none;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+.text-cta-caption{
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.card {
+  border: 0px;
+  transition: transform 0.3s ease-in-out; /* Define a transition for the transform property */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up by 5% on hover */
+}
+
+.btn-block{
+  box-shadow: 4px 6px 3px rgba(0, 0, 0, 0.336);
+}
+
+.about-card-head{
+  border-radius: 10px;
+  background-color: #F7A01C;
+}
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+.faq .faq-list {
+  padding: 0 100px;
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li+li {
+  margin-top: 15px;
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.faq .faq-list li:hover {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #F7A01C;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #3783B4;
+  transition: 0.3s;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #f79f1cdf;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 0;
+  }
+}
+
+.footer-links div a{
+  color: white;
+}
+
+.footer-links div a:hover{
+  color: #F7A01C;
+
+}
+
+/* Our Stories */
+
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+.fostrap-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+} 
+
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.card-content {
+  padding:15px;
+  text-align:left;
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+
+/* Gallery */
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+.modal-cta{
+  padding: 10px 20px;
+  background-color: #1C9346;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal-cta:hover{
+  padding: 10px 20px;
+  background-color: #1c9346be;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}

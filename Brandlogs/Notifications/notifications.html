@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Homepage/index.css"/>
+    <link rel="stylesheet" href="../Homepage/index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
+    <title>Brandlogs</title>
+</head>
+<body>
+    <header style="position: fixed; width: 100%; z-index: 2;">
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom-0 nav-bottom-line">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../Assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" style="width: 64px; height: 64px;" alt="Logo"/></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <form style="width: 100%;">
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control nav-search-bar" id="account-search" placeholder="Search by account name...">
+                    </div>
+                    <div id="suggestion-list"></div>
+                </form>
+                <button class="cta">Accept invitation</button>
+              </div>
+            </div>
+          </nav>
+          <hr style="width: 100%; margin-top: -1px;"/>
+    </header>
+    <main style="padding: 106px 0px;">
+      <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="active">
+          <ul class="list-unstyled components">
+            <li class="mobile-icon">
+                <a href="../Homepage/index.html">
+                    <div class="d-flex">
+                        <i class="fas fa-home" style="margin: 10px; color: #000;"></i><h4 class="mobile-hide-text text" style="margin: 10px; color: #000;">Home</h4>
+                    </div>
+                </a>
+            </li>
+            <li class="mobile-icon">
+                <a href="../Brands/brand.html">
+                    <div class="d-flex">
+                        <i class="fas fa-list-alt" style="margin: 10px; color: #000;"></i><h4 class="mobile-hide-text text" style="margin: 10px; color: black;">Brands</h4>
+                    </div>
+                </a>
+            </li>
+            <li class="mobile-icon">
+                <a href="../Wallet/wallet.html">
+                    <div class="d-flex">
+                      <i class="fas fa-wallet" style="margin: 10px; color: #000;"></i>
+                    <h4 class="mobile-hide-text text" style="margin: 10px; color: #000">Wallets</h4>
+                    </div>
+                </a>
+            </li>
+            <li class="mobile-icon">
+                <a href="../Notifications/notifications.html">
+                    <div class="d-flex">
+                      <i class="fas fa-bell" style="margin: 10px; color: #1C9346;"></i>
+                      <h4 class="mobile-hide-text text" style="margin: 10px; color: #1C9346">Notifications</h4>
+                    </div>
+                </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Page Content Holder -->
+      <div id="content">
+        <div class="d-flex justify-content-center align-content-center">
+            <div style="margin-top: 10%">
+              <p class="text-cta-caption" style="margin-bottom: -1px;">To Get $250 Bonus</p>
+              <button type="button" class="cta" data-toggle="modal" data-target="#first-modal">
+                  <b>Accept Invitation</b>
+              </button>  
+            </div>
+        </div>
+        <div class="container text-center">
+            
+          <!-- First Modal -->
+          <div class="modal fade" id="first-modal" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="d-flex justify-content-end">
+                  <button type="button" style="border: none; background-color: #DB2127; border-radius: 2px; color: white;" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="d-flex justify-content-center">
+                    <img class="img-fluid" src="../Assets/images/tony.jpg" alt="Tony Robbins"/>
+                  </div>
+                  <br/>
+                  <div class="card-content">
+                      <h3 class="text-center" style="margin-top: -12px;"><b>Tonny Robbins</b></h3>
+                      <br/>
+                      <p class="text-center" style="font-size: 18px;">Tonny Robbins has gifted you $50</p>
+                      <p class="text-center" style="font-size: 18px;">Fullfil a 2-way gift pledge to redeem</p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                      <button class="modal-cta next-modal" data-dismiss="modal" data-target="#second-modal">Accept</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Second Modal -->
+          <div class="modal" id="second-modal" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h4>Verify Phone Number</h4>
+                  <br/>
+                  <input type="tel" id="phone" class="form-control">
+                </div>
+                <br/>
+                <div class="d-flex justify-content-center">
+                  <button class="modal-cta next-modal" data-dismiss="modal" data-target="#third-modal">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Third Modal -->
+          <div class="modal" id="third-modal" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" id="modal-content">
+                <div class="modal-body">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4" style="min-width: 500px;">
+                      <div class="card bg-white mb-5 mt-5 border-0" style="box-shadow: 0 12px 15px rgba(0, 0, 0, 0.02);">
+                        <div class="card-body p-5 text-center">
+                          <h4>Verify</h4>
+                          <p>Your code was sent to you via phone</p>
+              
+                          <div class="otp-field mb-4">
+                            <input type="number" />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                            <input type="number" disabled />
+                          </div>              
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center" style="margin-top: -70px; position: relative; z-index: 2;">
+                  <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fourth-modal">Submit</button>
+                </div>
+                <p class="resend text-muted mb-0">
+                  Didn't receive code? <a href="">Request again</a>
+                </p>
+                <br/>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Fourth Modal -->
+          <div class="modal" id="fourth-modal" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h4>Profile</h4>
+                  <br/>
+                  <div class="container">
+                    <div class="row">
+                        <div class="">
+                          <div class="d-flex justify-content-center">
+                            <div class="profile-pic">            
+                              <img alt="User Pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/138926-200.png" id="profile-image1" height="200">
+                              <input id="profile-image-upload" class="hidden" hidden type="file" onchange="previewFile()" >
+                              <div style="color:#999;" >  </div>                                  
+                            </div>
+                          </div>
+                          
+                          <div class="user-detail">
+                            <p class="text-start">Name</p>
+                            <div class="form-group">  
+                              <input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name">
+                            </div>
+                            <br/>
+                            <p class="text-start">Bio</p>
+                            <div class="form-group">  
+                              <textarea type="text" class="form-control" id="bio" placeholder="Input your Bio" name="bio"></textarea>
+                            </div>                                                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
+                    <button class="modal-cta next-modal" data-dismiss="modal" data-target="#fifth-modal">Create Profile</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Fifth Modal -->
+          <div class="modal" id="fifth-modal" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h1>Congratulations!</h1>
+                  <br/>
+                  <p>
+                    Your Profile has been created successfully. We have
+                    awarded you $250 bonus.
+                  </p>
+                  <br/>
+                  <div class="d-flex justify-content-center">
+                    <input type="checkbox" class="" name="accept" />
+                    <span>&nbsp;&nbsp; I have read and accepted <a href="../TermsAndConditions/termsAndConditions.html">terms of use</a></span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center my-1" style="margin-top: -70px; position: relative; z-index: 2;">
+                  <button class="modal-cta next-modal" data-dismiss="modal" onclick="navigateCheckOut()">Complete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-success py-5">
+      <div class="container-fluid text-center">
+        
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+          <!-- <a href="/" class="d-flex justify-content-start" aria-label="Go home" title="Company">
+              <img src="../assets/images/Brandlogs Inc Logo NEW LOGO 14.08 1.png" style="width: 140px; height: 140px; margin-bottom: 40px;" alt="logo" class="img-fluid">
+            </a>-->
+            <div class="">
+              <div class="d-flex justify-content-start">
+
+              </div>
+              <div class="d-flex justify-content-start">
+                <div class="d-flex align-items-center">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 d-flex justify-content-center footer-links-column">
+            
+            <div class="footer-links">
+              <h2 class="h2 mb-5 footer-header">Welcome!<br/> To The Age Of Hunger Liberation</h2>
+              <div>
+                <a href="#About" class="text-decoration-none">About Us</a>
+              </div>
+              <div>
+                <a href="#Benefits" class="text-decoration-none">Benefits</a>
+              </div>
+              <div>
+                <a href="#OurStories" class="text-decoration-none">Our Stories</a>
+              </div>
+              <div>
+                  <a href="#FAQs" class="text-decoration-none">FAQs</a>
+              </div>
+              <div>
+                  <a href="/" class="text-decoration-none text-white">Privacy Policy</a>
+              </div>
+              <div>
+                  <a href="/" class="text-decoration-none text-white">Terms &amp; Conditions</a>
+              </div>
+              <br/>
+              <div>
+                <a href="../ContactForm/contact.html" class="text-decoration-none" style="color: white; font-weight: 600;">Contact Us</a>
+              </div>
+              <p class="text-white pt-2">94306 Palo Alto, CA, United States</p>
+              <br/>
+              <p  style="margin-top: -30px; color: white;">© Copyright 2020 Brandlogs Inc. All rights reserved.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"></script>
+
+    <!-- Navigate to Checkout -->
+    <script>
+      function navigateCheckOut(){
+        window.location.href = "../Checkout/checkout.html"
+      }
+    </script>
+
+    <!-- Photo Upload -->
+    <script>
+       function previewFile() {
+          var preview = document.querySelector('img');
+          var file    = document.querySelector('input[type=file]').files[0];
+          var reader  = new FileReader();
+
+          reader.addEventListener("load", function () {
+            preview.src = reader.result;
+          }, false);
+
+          if (file) {
+            reader.readAsDataURL(file);
+          }
+        }
+        $(function() {
+          $('#profile-image1').on('click', function() {
+              $('#profile-image-upload').click();
+          });
+        });
+                
+    </script>
+
+    <!-- Phone number scripts -->
+    <script>
+      var input = document.querySelector("#phone");
+      var iti = window.intlTelInput(input, {
+        separateDialCode: true, // This will show a separate dial code input
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.0/build/js/utils.js",
+        customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+          // Customize the placeholder to include "+1" as the starting value
+          return "+1 " + selectedCountryPlaceholder;
+        },
+        initialCountry: "us", // Set the initial country to the United States
+        onlyCountries: ["us"], // Restrict to the United States
+      });
+
+      // Listen for input changes and validate the entered phone number
+      input.addEventListener("input", function() {
+        var isValidNumber = iti.isValidNumber();
+        if (isValidNumber) {
+          // The entered phone number is valid
+          input.setCustomValidity(""); // Clear any validation error message
+        } else {
+          // The entered phone number is not valid
+          input.setCustomValidity("Please enter a valid phone number starting with +1");
+        }
+      });
+
+      // Store the instance variable so we can access it in the console e.g. window.iti.getNumber()
+      window.iti = iti;
+
+    </script>
+
+    <!-- OTP Script -->
+    <script>
+      const inputs = document.querySelectorAll(".otp-field > input");
+      const button = document.querySelector(".btn");
+
+      window.addEventListener("load", () => inputs[0].focus());
+      button.setAttribute("disabled", "disabled");
+
+      inputs[0].addEventListener("paste", function (event) {
+        event.preventDefault();
+
+        const pastedValue = (event.clipboardData || window.clipboardData).getData(
+          "text"
+        );
+        const otpLength = inputs.length;
+
+        for (let i = 0; i < otpLength; i++) {
+          if (i < pastedValue.length) {
+            inputs[i].value = pastedValue[i];
+            inputs[i].removeAttribute("disabled");
+            inputs[i].focus;
+          } else {
+            inputs[i].value = ""; // Clear any remaining inputs
+            inputs[i].focus;
+          }
+        }
+      });
+
+      inputs.forEach((input, index1) => {
+        input.addEventListener("keyup", (e) => {
+          const currentInput = input;
+          const nextInput = input.nextElementSibling;
+          const prevInput = input.previousElementSibling;
+
+          if (currentInput.value.length > 1) {
+            currentInput.value = "";
+            return;
+          }
+
+          if (
+            nextInput &&
+            nextInput.hasAttribute("disabled") &&
+            currentInput.value !== ""
+          ) {
+            nextInput.removeAttribute("disabled");
+            nextInput.focus();
+          }
+
+          if (e.key === "Backspace") {
+            inputs.forEach((input, index2) => {
+              if (index1 <= index2 && prevInput) {
+                input.setAttribute("disabled", true);
+                input.value = "";
+                prevInput.focus();
+              }
+            });
+          }
+
+          button.classList.remove("active");
+          button.setAttribute("disabled", "disabled");
+
+          const inputsNo = inputs.length;
+          if (!inputs[inputsNo - 1].disabled && inputs[inputsNo - 1].value !== "") {
+            button.classList.add("active");
+            button.removeAttribute("disabled");
+
+            return;
+          }
+        });
+      });
+
+    </script>
+
+    <!-- Open a sequence of modals-->
+    <script>
+      $('.next-modal').on('click', function() {
+        var targetModal = $(this).data('target');
+        $(this).closest('.modal').modal('hide');
+        $(targetModal).modal('show');
+      });
+
+      $('.btn-toggle-fade').on('click', function() {
+        if ($('.modal').hasClass('fade')) {
+          $('.modal').removeClass('fade');
+          $(this).removeClass('btn-success');
+        } else {
+          $('.modal').addClass('fade');
+          $(this).addClass('btn-success');
+        }
+      });
+    </script>
+</body>
+</html>
